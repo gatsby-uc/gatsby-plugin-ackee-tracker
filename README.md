@@ -1,3 +1,5 @@
+# gatsby-plugin-ackee-tracker
+
 ## Description
 Easily add Ackee Tracking Script to your Gatsby site.
 
