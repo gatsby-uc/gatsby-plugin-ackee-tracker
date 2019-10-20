@@ -11,6 +11,7 @@
     "gatsby",
     "gatsby-plugin",  
     "ackee",
+    "ackee-tracker",
     "tracking",
     "tracker",
     "analytics",
