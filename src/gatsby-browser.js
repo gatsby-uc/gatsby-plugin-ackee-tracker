@@ -1,3 +1,5 @@
+import ackeeTracker from 'ackee-tracker';
+
 exports.onRouteUpdate = ({ location }) => {
   const domainId = window.GATSBY_ACKEE_DOMAIN_ID;
   const server = window.GATSBY_ACKEE_SERVER;

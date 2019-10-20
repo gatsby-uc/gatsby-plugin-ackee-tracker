@@ -47,5 +47,8 @@
       "babel-preset-env",
       "babel-preset-react"
     ]
+  },
+  "dependencies": {
+    "ackee-tracker": "^3.2.1"
   }
 }
