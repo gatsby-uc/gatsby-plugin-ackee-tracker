@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-ackee-tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gatsby plugin to add Ackee Tracker to a site.",
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir .",
