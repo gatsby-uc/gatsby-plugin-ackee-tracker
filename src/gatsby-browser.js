@@ -1,20 +1,40 @@
-import ackeeTracker from 'ackee-tracker';
+import * as ackeeTracker from 'ackee-tracker';
 
-exports.onRouteUpdate = ({ location }) => {
-  const domainId = window.GATSBY_PLUGIN_ACKEE_DOMAIN_ID;
-  const server = window.GATSBY_PLUGIN_ACKEE_SERVER;
-  const ignoreLocalhost = window.GATSBY_PLUGIN_ACKEE_IGNORE_LOCALHOST;
-  const detailed = window.GATSBY_PLUGIN_ACKEE_DETAILED;
+/**
+ * Gatsby Plugin Ackee
+ *
+ * A Gatsby Plugin for usingP ackee tracker
+ *
+ * @export onRouteUpdate
+ * @param {*} {
+ *   location,
+ *   prevLocation
+ * }
+ * @param {*} {
+ *   domain_id,
+ *   server,
+ *   ignore_localhost,
+ *   detailed,
+ * }
+ */
+export function onRouteUpdate(
+  _,
+  { domain_id, server, ignore_localhost, detailed }
+) {
+  // Create Instance of the Ackee Tracker
+  const instance = ackeeTracker.create(
+    {
+      server: server,
+      domainId: domain_id,
+    },
+    {
+      ignoreLocalhost: ignore_localhost,
+      detailed: detailed,
+    }
+  );
+  // Create attributes
+  const attributes = ackeeTracker.attributes();
 
-  const instance = ackeeTracker.create({
-    server: server,
-    domainId: domainId,
-  });
-
-  const attributes = ackeeTracker.attributes({
-    ignoreLocalhost,
-    detailed,
-  });
-
+  // record attributes
   instance.record(attributes);
-};
+}

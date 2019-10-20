@@ -18,34 +18,25 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/burnsy/gatsby-plugin-ackee-tracker.git"
+    "url": "https://github.com/burnsy/gatsby-plugin-ackee.git"
   },
   "author": "Christopher Burns <christopher@tapkit.io>",
   "license": "MIT",
   "peerDependencies": {
-    "gatsby": ">2.0.0-alpha"
+    "gatsby": "^2.4.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.0.0",
-    "babel-core": "^6.0.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.0.0",
-    "babel-preset-react": "^6.0.0",
-    "babel-preset-stage-3": "^6.24.1",
-    "husky": "^0.14.3",
-    "lint-staged": "^7.3.0",
-    "prettier": "1.16.1"
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "babel-preset-gatsby-package": "^0.2.9",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "1.18.2"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
       "prettier --config .prettierrc.js --write",
       "git add"
-    ]
-  },
-  "babel": {
-    "presets": [
-      "babel-preset-env",
-      "babel-preset-react"
     ]
   },
   "dependencies": {
