@@ -11,24 +11,24 @@ import * as ackeeTracker from 'ackee-tracker';
  *   prevLocation
  * }
  * @param {*} {
- *   domain_id,
+ *   domainId,
  *   server,
- *   ignore_localhost,
+ *   ignoreLocalhost,
  *   detailed,
  * }
  */
 export function onRouteUpdate(
   _,
-  { domain_id, server, ignore_localhost, detailed }
+  { domainId, server, ignoreLocalhost, detailed }
 ) {
   // Create Instance of the Ackee Tracker
   const instance = ackeeTracker.create(
     {
       server: server,
-      domainId: domain_id,
+      domainId: domainId,
     },
     {
-      ignoreLocalhost: ignore_localhost,
+      ignoreLocalhost: ignoreLocalhost,
       detailed: detailed,
     }
   );

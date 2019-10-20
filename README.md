@@ -23,11 +23,11 @@ plugins: [
     resolve: "gatsby-plugin-ackee-tracker",
     options: {
       // Domatin ID found when adding a domain in the admin panel.
-      domain_id: "YOUR_ACKEE_DOMAIN_ID",
+      domainId: 'YOUR_ACKEE_DOMAIN_ID',
       // URL to Server eg: "https://analytics.test.com".
-      server: "https://analytics.test.com",
+      server: 'https://analytics.test.com',
       // Disabled analytic tracking when running localy
-      ignore_localhost: true,
+      ignoreLocalhost: true,
       // If enabled it will collect info on OS, BrowserInfo, Device  & ScreenSize
       detailed: false
     },
