@@ -1,38 +1,28 @@
 {
   "name": "gatsby-plugin-ackee-tracker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Gatsby plugin to add Ackee Tracker to a site.",
-  "scripts": {
-    "build": "NODE_ENV=production babel src --out-dir .",
-    "precommit": "lint-staged",
-    "publish": "npm run build"
-  },
   "keywords": [
-    "gatsby",
-    "gatsby-plugin",  
     "ackee",
     "ackee-tracker",
-    "tracking",
-    "tracker",
     "analytics",
-    "statistics"
+    "gatsby",
+    "gatsby-plugin",
+    "statistics",
+    "tracker",
+    "tracking"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/burnsy/gatsby-plugin-ackee-tracker.git"
   },
-  "author": "Christopher Burns <christopher@tapkit.io>",
   "license": "MIT",
-  "peerDependencies": {
-    "gatsby": "^2.4.0"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.6.4",
-    "@babel/core": "^7.6.4",
-    "babel-preset-gatsby-package": "^0.2.9",
-    "husky": "^3.0.9",
-    "lint-staged": "^9.4.2",
-    "prettier": "1.18.2"
+  "author": "Christopher Burns <christopher@tapkit.io>",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production babel src --out-dir .",
+    "precommit": "lint-staged",
+    "publish": "npm run build"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -42,5 +32,16 @@
   },
   "dependencies": {
     "ackee-tracker": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "babel-preset-gatsby-package": "^0.2.9",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "prettier": "1.18.2"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.4.0"
   }
 }
