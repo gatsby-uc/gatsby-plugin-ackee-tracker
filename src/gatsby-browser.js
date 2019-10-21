@@ -32,9 +32,7 @@ export function onRouteUpdate(
       detailed: detailed,
     }
   );
-  // Create attributes
-  const attributes = ackeeTracker.attributes();
 
   // record attributes
-  instance.record(attributes);
+  instance.record();
 }
