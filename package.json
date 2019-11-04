@@ -19,6 +19,10 @@
   "license": "MIT",
   "author": "Christopher Burns <christopher@tapkit.io>",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "gatsby-browser.js"
+  ],
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir .",
     "precommit": "lint-staged",
