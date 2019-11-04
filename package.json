@@ -31,7 +31,7 @@
     ]
   },
   "dependencies": {
-    "ackee-tracker": "^3.2.1"
+    "ackee-tracker": "^3.2.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
