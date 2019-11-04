@@ -1,38 +1,59 @@
 import * as ackeeTracker from 'ackee-tracker';
 
+let tracker = null;
+
 /**
- * Gatsby Plugin Ackee
+ * Ackee Tracker
  *
- * A Gatsby Plugin for using ackee tracker
+ * Creates istance of tracker if let is null. if record var is present then it will record the instance
  *
- * @export onRouteUpdate
- * @param {*} {
- *   location,
- *   prevLocation
- * }
- * @param {*} {
- *   domainId,
- *   server,
- *   ignoreLocalhost,
- *   detailed,
- * }
+ * @param {*} trackerVars
+ * @param {*} record
  */
-export function onRouteUpdate(
+const AckeeTraker = (trackerVars, record) => {
+  if (trackerVars && tracker === null) {
+    const { domainId, server, ignoreLocalhost, detailed } = trackerVars;
+
+    ackeeTracker.create(
+      {
+        server: server,
+        domainId: domainId,
+      },
+      {
+        ignoreLocalhost: ignoreLocalhost,
+        detailed: detailed,
+      }
+    );
+  }
+  if (record && tracker) {
+    tracker.record();
+  }
+};
+
+/**
+ * onInitialClientRender
+ *
+ * Adds Ackee Tracker to website when it renders page
+ *
+ * @export onInitialClientRender
+ * @param {*} _
+ * @param {*} { domainId, server, ignoreLocalhost, detailed }
+ */
+export function onInitialClientRender(
   _,
   { domainId, server, ignoreLocalhost, detailed }
 ) {
-  // Create Instance of the Ackee Tracker
-  const instance = ackeeTracker.create(
-    {
-      server: server,
-      domainId: domainId,
-    },
-    {
-      ignoreLocalhost: ignoreLocalhost,
-      detailed: detailed,
-    }
-  );
+  AckeeTraker({ domainId, server, ignoreLocalhost, detailed }, false);
+}
 
+/**
+ * onRouteUpdate
+ *
+ * Added function call to where an instrance of the tracker is and calls a update of that tracker
+ *
+ * @export onRouteUpdate
+ */
+export function onRouteUpdate() {
   // record attributes
-  instance.record();
+  AckeeTraker(false, true);
 }
