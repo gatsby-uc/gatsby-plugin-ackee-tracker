@@ -3,7 +3,7 @@ import * as ackeeTracker from 'ackee-tracker';
 /**
  * Gatsby Plugin Ackee
  *
- * A Gatsby Plugin for usingP ackee tracker
+ * A Gatsby Plugin for using ackee tracker
  *
  * @export onRouteUpdate
  * @param {*} {
