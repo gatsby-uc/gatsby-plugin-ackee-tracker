@@ -1,6 +1,6 @@
 import * as ackeeTracker from 'ackee-tracker';
 
-let trackerInstance = null;
+let trackerInstance = false;
 
 /**
  * onInitialClientRender
@@ -16,7 +16,7 @@ const AckeeTraker = (
   record
 ) => {
   // checks if domainID and Server is present and also if tracker is null then create tracking instance
-  if (domainId && server && trackerInstance === null) {
+  if (domainId && server && trackerInstance === false) {
     trackerInstance = ackeeTracker.create(
       {
         server,
