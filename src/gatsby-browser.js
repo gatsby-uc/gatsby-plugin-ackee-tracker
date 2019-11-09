@@ -1,43 +1,32 @@
 import * as ackeeTracker from 'ackee-tracker';
 
-let trackerInstance = false;
-
-/**
- * onInitialClientRender
- *
- * Adds Ackee Tracker to website when it renders page
- *
- * @export onInitialClientRender
- * @param {*} _
- * @param {*} { domainId, server, ignoreLocalhost, detailed }
- */
-export function onInitialClientRender(
-  _,
-  { domainId, server, ignoreLocalhost, detailed }
-) {
-  trackerInstance = ackeeTracker.create(
-    {
-      server,
-      domainId,
-    },
-    {
-      ignoreLocalhost,
-      detailed,
-    }
-  );
-  
-  // Track initial page
-  trackerInstance.record();
-}
+let trackerInstance;
 
 /**
  * onRouteUpdate
  *
- * Added function call to where an instrance of the tracker is and calls a update of that tracker
+ * Creats a tracking instance and a new record when the route changes
  *
  * @export onRouteUpdate
  */
-export function onRouteUpdate() {
+export function onRouteUpdate(
+  _,
+  { domainId, server, ignoreLocalhost, detailed }
+) {
+  // Check if an instance already exists
+  if (trackerInstance == null) {
+    trackerInstance = ackeeTracker.create(
+      {
+        server,
+        domainId,
+      },
+      {
+        ignoreLocalhost,
+        detailed,
+      }
+    );
+  };
+  
   // Track page changes
   trackerInstance.record();
 }
