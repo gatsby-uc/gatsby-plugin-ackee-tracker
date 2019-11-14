@@ -43,7 +43,7 @@
     "babel-preset-gatsby-package": "^0.2.9",
     "husky": "^3.0.9",
     "lint-staged": "^9.4.2",
-    "prettier": "1.18.2"
+    "prettier": "1.19.1"
   },
   "peerDependencies": {
     "gatsby": "^2.4.0"
