@@ -881,9 +881,9 @@ abbrev@1:
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
 ackee-tracker@^3.2.2:
-  version "3.2.2"
-  resolved "https://registry.npmjs.org/ackee-tracker/-/ackee-tracker-3.2.2.tgz#829ca3b5e50ba169e01232a98ab304fe0b5c9b86"
-  integrity sha512-ss5Lks3fJqf5tHeFTia0iM/s8DeXVovut1rgqHydBcVJuI5rf2GKWNSImgNiufBkVztmYXJNIIEgr28wkhphFw==
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/ackee-tracker/-/ackee-tracker-3.2.3.tgz#9e260ac5a52f2941d0665290e42b97832e4ecc9f"
+  integrity sha512-LZqwNn+pzzuKIKS93KLGlPeLIBHSmbT9MacWkjTDNDR8y9/7FvE92vxAYiD9Lx7n08fflZCrvTIw6I+d9825AA==
   dependencies:
     platform "^1.3.5"
 
