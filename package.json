@@ -47,5 +47,9 @@
   },
   "peerDependencies": {
     "gatsby": "^2.4.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
