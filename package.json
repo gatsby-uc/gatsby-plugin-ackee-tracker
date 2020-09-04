@@ -14,7 +14,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Burnsy/gatsby-plugin-ackee-tracker"
+    "url": "https://github.com/Burnsy/gatsby-plugin-ackee-tracker.git"
   },
   "license": "MIT",
   "author": "Christopher Burns <christopher@tapstudio.co.uk>",
