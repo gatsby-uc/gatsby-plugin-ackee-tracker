@@ -1,7 +1,7 @@
 {
-  "name": "@willthevideoman/gatsby-plugin-ackee-tracker",
-  "version": "1.5.0",
-  "description": "Gatsby plugin to add Ackee Tracker to a site. Streamlined for Ackee V2.",
+  "name": "gatsby-plugin-ackee-tracker",
+  "version": "2.0.0",
+  "description": "Gatsby plugin to add Ackee Tracker to a site.",
   "keywords": [
     "ackee",
     "ackee-tracker",
@@ -14,10 +14,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/WillTheVideoMan/gatsby-plugin-ackee-tracker"
+    "url": "https://github.com/Burnsy/gatsby-plugin-ackee-tracker"
   },
   "license": "MIT",
-  "author": "Will Hall <hello@willhall.uk>",
+  "author": "Christopher Burns <christopher@tapstudio.co.uk>",
   "main": "index.js",
   "files": [
     "index.js",
