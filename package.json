@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-ackee-tracker",
-  "version": "1.4.0",
+  "version": "2.0.0",
   "description": "Gatsby plugin to add Ackee Tracker to a site.",
   "keywords": [
     "ackee",
@@ -14,35 +14,24 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/burnsy/gatsby-plugin-ackee-tracker.git"
+    "url": "https://github.com/Burnsy/gatsby-plugin-ackee-tracker.git"
   },
   "license": "MIT",
-  "author": "Christopher Burns <christopher@tapkit.io>",
+  "author": "Christopher Burns <christopher@tapstudio.co.uk>",
   "main": "index.js",
   "files": [
     "index.js",
     "gatsby-browser.js"
   ],
   "scripts": {
-    "build": "NODE_ENV=production babel src --out-dir .",
-    "precommit": "lint-staged",
-    "publish": "npm run build"
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --config .prettierrc.js --write",
-      "git add"
-    ]
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "lint": "eslint . --ext .js --cache"
   },
   "dependencies": {
-    "ackee-tracker": "^3.2.3"
+    "ackee-tracker": "4.0.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "babel-preset-gatsby-package": "^0.3.1",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.1.3",
+    "eslint": "7.5.0",
     "prettier": "2.0.4"
   },
   "peerDependencies": {
