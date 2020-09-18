@@ -28,11 +28,11 @@
     "lint": "eslint . --ext .js --cache"
   },
   "dependencies": {
-    "ackee-tracker": "4.0.0"
+    "ackee-tracker": "4.0.1"
   },
   "devDependencies": {
-    "eslint": "7.5.0",
-    "prettier": "2.0.4"
+    "eslint": "7.9.0",
+    "prettier": "2.1.2"
   },
   "peerDependencies": {
     "gatsby": "^2.4.0"
