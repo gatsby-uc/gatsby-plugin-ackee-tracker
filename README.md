@@ -32,6 +32,8 @@ plugins: [
       server: 'https://analytics.test.com',
       // Disabled analytic tracking when running localy
       ignoreLocalhost: true,
+      // Enable or disable the tracking of your own visits (as identified by your login to the Ackee dashboard).
+      ignoreOwnVisits: false,
       // If enabled it will collect info on OS, BrowserInfo, Device  & ScreenSize
       detailed: false,
     },
