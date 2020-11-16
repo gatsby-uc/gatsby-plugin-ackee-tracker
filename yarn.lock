@@ -39,10 +39,10 @@
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
   integrity sha512-rr+OQyAjxze7GgWrSaJwydHStIhHq2lvY3BOC2Mj7KnzI7XK0Uw1TOOdI9lDoajEbSWLiYgoo4f1R51erQfhPQ==
 
-ackee-tracker@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/ackee-tracker/-/ackee-tracker-4.0.1.tgz#174b243a5beb9878e3eea50243a133364fa7ef3e"
-  integrity sha512-gchmU9F0Sd88FsFz89/4rfj484yYKQc+eXuyPEnZhgx2sqo7X0kMsFBMO69jTg3J+hB3bU6KQjE1dP4sp7CBQQ==
+ackee-tracker@^4.2:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/ackee-tracker/-/ackee-tracker-4.2.0.tgz#6bae008eabdaac358c3da79b568e5e2694bed765"
+  integrity sha512-SEEr7c+6l1+leLmjf61Abkjux+NnFQON3dpoXgbnmYj/MdYcOF2qiaT8Y8jpMspNJ94CN1TKTD9uLcGrmPvBHA==
   dependencies:
     platform "^1.3.6"
 
