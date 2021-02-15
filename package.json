@@ -28,7 +28,7 @@
     "lint": "eslint . --ext .js --cache"
   },
   "dependencies": {
-    "ackee-tracker": "^4.2"
+    "ackee-tracker": "^5"
   },
   "devDependencies": {
     "eslint": "7.9.0",

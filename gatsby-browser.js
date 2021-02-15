@@ -20,21 +20,15 @@ exports.onRouteUpdate = (
    * If there is no tracker instance, instantiate one with the plugin options.
    */
   if (trackerInstance == null) {
-    trackerInstance = ackeeTracker.create(
-      {
-        server,
-        domainId,
-      },
-      {
-        ignoreLocalhost,
-        ignoreOwnVisits,
-        detailed,
-      }
-    );
+    trackerInstance = ackeeTracker.create(server, {
+      ignoreLocalhost,
+      ignoreOwnVisits,
+      detailed,
+    });
   }
 
   /**
    * Record the visit to this route.
    */
-  trackerInstance.record();
+  trackerInstance.record(domainId);
 };
