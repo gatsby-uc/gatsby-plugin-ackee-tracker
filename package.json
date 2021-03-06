@@ -35,7 +35,7 @@
     "prettier": "2.1.2"
   },
   "peerDependencies": {
-    "gatsby": "^2.4.0"
+    "gatsby": "^3.0.0"
   },
   "publishConfig": {
     "access": "public",
