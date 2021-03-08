@@ -31,11 +31,11 @@
     "ackee-tracker": "^5"
   },
   "devDependencies": {
-    "eslint": "7.9.0",
-    "prettier": "2.1.2"
+    "eslint": "7.21.0",
+    "prettier": "2.2.1"
   },
   "peerDependencies": {
-    "gatsby": "^2.4.0"
+    "gatsby": "^3.0.0"
   },
   "publishConfig": {
     "access": "public",
